@@ -18,5 +18,13 @@ CREATE TABLE persons_jdbc
 	creation_date TIMESTAMP
 );
 
+CREATE TABLE simple_persons
+(
+	id            UUID,
+	name          TEXT,
+	inserted_by   TEXT,
+	age           INTEGER,
+	creation_date TIMESTAMP
+);
 
 
