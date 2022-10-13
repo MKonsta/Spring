@@ -7,5 +7,5 @@ CREATE TABLE persons
 	password TEXT NOT NULL
 );
 
-INSERT INTO public.persons (id, username, year_of_birth, password) VALUES (1, 'test_user1', 1960, 'password1');
-INSERT INTO public.persons (id, username, year_of_birth, password) VALUES (2, 'test_user2', 1960, 'password2');
+INSERT INTO public.persons (username, year_of_birth, password) VALUES ('test_user1', 1960, 'password1');
+INSERT INTO public.persons (username, year_of_birth, password) VALUES ('test_user2', 1960, 'password2');
