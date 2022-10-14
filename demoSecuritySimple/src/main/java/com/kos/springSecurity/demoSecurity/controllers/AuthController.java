@@ -21,8 +21,7 @@ public class AuthController {
     private final PeopleService peopleService;
 
     @Autowired
-    public AuthController(PersonValidator personValidator,
-                          PeopleService peopleService) {
+    public AuthController(PersonValidator personValidator, PeopleService peopleService) {
         this.personValidator = personValidator;
         this.peopleService = peopleService;
     }
