@@ -36,6 +36,7 @@ public class PeopleService {
     public Person save(Person person) {
         String encodedPassword = passwordEncoder.encode(person.getPassword());
         person.setPassword(encodedPassword);
+        person.setRole("ROLE_USER");
         return peopleRepository.save(person);
     }
 }
